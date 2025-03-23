@@ -29,3 +29,11 @@ Reemplaza `<USUARIO>` con el nombre que desees utilizar en el chat.
 | `ant servidor`     | Genera el archivo `.jar` de `ChatServerImpl`         |
 | `ant all`          | Ejecuta `compile`, `javadoc`, `cliente` y `servidor` |
 
+## 📷 Capturas
+A continuación, se presentan algunas capturas del funcionamiento de la aplicación:
+
+<p align="center">
+    <img src="./EPO1-1C/images/imagen1.png" alt="Captura 1" width="400px"><br>
+    <img src="./EPO1-1C/images/imagen2.png" alt="Captura 2" width="400px"><br>
+    <img src="./EPO1-1C/images/imagen3.png" alt="Captura 3" width="400px">
+</p>
