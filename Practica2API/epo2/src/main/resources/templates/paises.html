@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Países</title>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+    <h1>EPO2 - Sistemas Distribuidos</h1>
+    <h2>Lista de Países</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Capital</th>
+                <th>Continente</th>
+                <th>Población</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="pais : ${paises}">
+                <td th:text="${pais.nombre}"></td>
+                <td th:text="${pais.capital}"></td>
+                <td th:text="${pais.continente}"></td>
+                <td th:text="${pais.poblacion}"></td>
+                <td>
+                    <form th:action="@{/borrar-pais}" method="post" style="display:inline;">
+                        <input type="hidden" name="id" th:value="${pais.id}" />
+                        <button type="submit">Borrar</button>
+                    </form>
+
+                    <a th:href="@{'/editar_pais/' + ${pais.id}}">
+                        <button>Editar</button>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <a href="/crear_pais">
+        <button>Crear País</button>
+    </a>
+	
+	<form action="/paises/txt" method="get">
+	    <button type="submit">Descargar</button>
+	</form>
+
+    <br><br>
+    <a href="/inicio">Volver al inicio</a>
+
+    <br><br>
+    <footer>
+        <hr>
+        <p>Elaborado por Miguel José Gómez López y Jon Ander Incera Moreno</p>
+    </footer>
+</body>
+</html>
+

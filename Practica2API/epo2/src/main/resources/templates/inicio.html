@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+    <h1>EPO2 - Sistemas Distribuidos</h1>
+    <h2>Iniciar Sesión</h2>
+
+    <form action="/login" method="post">
+        <label for="usuario">Usuario:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="contrasena">Contraseña:</label><br>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <br>
+    <form action="/crear_usuario" method="get">
+        <button type="submit">Crear nuevo usuario</button>
+    </form>
+
+    <!-- Mensaje mostrado si las credenciales no son válidas o al crear un usuario -->
+    <p th:text="${mensaje}" style="color:green;"></p>
+
+    <br><br>
+    <footer>
+        <hr>
+        <p>Elaborado por Miguel José Gómez López y Jon Ander Incera Moreno</p>
+    </footer>
+</body>
+</html>
+
+
+

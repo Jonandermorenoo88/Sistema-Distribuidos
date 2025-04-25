@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear País</title>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+    <h1>EPO2 - Sistemas Distribuidos</h1>
+    <h2>Formulario para Crear un País</h2>
+
+    <form action="/crear-pais" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="capital">Capital:</label><br>
+        <input type="text" id="capital" name="capital" required><br><br>
+
+        <label for="continente">Continente:</label><br>
+        <select id="continente" name="continente" required>
+            <option value="">-- Selecciona un continente --</option>
+            <option value="África">África</option>
+            <option value="América">América</option>
+            <option value="Asia">Asia</option>
+            <option value="Europa">Europa</option>
+            <option value="Oceanía">Oceanía</option>
+        </select><br><br>
+
+        <label for="poblacion">Población:</label><br>
+        <input type="number" id="poblacion" name="poblacion" required><br><br>
+
+        <button type="submit">Crear País</button>
+    </form>
+
+    <br>
+    <form action="/paises" method="get" style="display: inline;">
+        <button type="submit">Volver a la tabla</button>
+    </form>
+
+    <form action="/inicio" method="get" style="display: inline;">
+        <button type="submit">Ir al inicio</button>
+    </form>
+
+    <br><br>
+    <footer>
+        <hr>
+        <p>Elaborado por Miguel José Gómez López y Jon Ander Incera Moreno</p>
+    </footer>
+</body>
+</html>
