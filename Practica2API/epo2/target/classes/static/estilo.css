@@ -1,0 +1,85 @@
+/* Asegura que el fondo y el color de texto sean agradables */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Título secundario */
+h2 {
+    text-align: center;
+    color: #34495e;
+}
+
+/* Tabla de países */
+table {
+    width: 80%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado de la tabla */
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Celdas de la tabla */
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Mejorar la apariencia de las filas alternas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Efecto hover sobre filas */
+tr:hover {
+    background-color: #f1c40f;
+    cursor: pointer;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #3498db;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

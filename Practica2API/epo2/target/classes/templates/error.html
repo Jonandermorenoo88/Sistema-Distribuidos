@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+    <h1>EPO2 - Sistemas Distribuidos</h1>
+    <h2>Error</h2>
+
+    <!-- Mostrar el mensaje de error -->
+    <p th:text="${mensaje}"></p>
+
+    <!-- Botón para volver al inicio -->
+    <form action="/inicio" method="get" style="display: inline;">
+        <button type="submit">Volver al inicio</button>
+    </form>
+
+    <br><br>
+    <footer>
+        <hr>
+        <p>Elaborado por Miguel José Gómez López y Jon Ander Incera Moreno</p>
+    </footer>
+</body>
+</html>
+

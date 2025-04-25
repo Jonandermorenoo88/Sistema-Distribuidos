@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Usuario</title>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+    <h1>EPO2 - Sistemas Distribuidos</h1>
+    <h2>Iniciar Sesión</h2>
+
+    <!-- Mensaje opcional si se usa desde el controlador -->
+    <p th:text="${mensaje}" style="color: green;"></p>
+
+    <form action="/crear-usuario" method="post">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="usuario">Usuario:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="contrasena">Contraseña:</label><br>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+        <button type="submit">Crear usuario</button>
+    </form>
+
+    <br>
+    <form action="/inicio" method="get">
+        <button type="submit">Volver al inicio</button>
+    </form>
+
+    <br><br>
+    <footer>
+        <hr>
+        <p>Elaborado por Miguel José Gómez López y Jon Ander Incera Moreno</p>
+    </footer>
+</body>
+</html>
+
