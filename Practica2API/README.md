@@ -98,4 +98,33 @@ A continuación se muestran algunos ejemplos:
   <p><em>Figura 4: Error 404 - País no encontrado.</em></p>
 </div>
 
+## 📚 <span style="color:#DC143C;">Manuel de Usuario</span>
+
+En esta sección vamos a explicar de manera general como utilizar la aplicación:
+
+<div align="center">
+  <img src="./imagenes/PANTALLA_INICIO.png" alt="Inicio" width="800" style="border: 2px solid #ccc; border-radius: 10px;"/>
+</div>
+ <p><em>Al entrar en la aplicación tenemos la opción de loguearnos o crear un nuevo usuario, cabe resaltar que no hay ningún usuario por defecto creado, por lo que tendras que crear uno en el boton "Crear nuevo usuario".</em></p>
+
+ <div align="center">
+  <img src="./imagenes/CREAR_USUARIO.png" alt="Crear usuario" width="800" style="border: 2px solid #ccc; border-radius: 10px;"/>
+</div>
+ <p><em>Con este formulario podrá crear un nuevo usuario.</em></p>
+
+  <div align="center">
+  <img src="./imagenes/TABLA_PRINCIPAL.png" alt="Tabla Principal" width="800" style="border: 2px solid #ccc; border-radius: 10px;"/>
+</div>
+ <p><em>Al loguearnos, tendremos una tabla con todos los registros de la bbdd, desde allí podremos crear, editar o borrar los registros de la mismas o incluso descargar un .txt con todos los registros</em></p>
+
+### ⚠️ <span style="color:#DC143C;">Tratamiento de errores</span>
+<div align="center">
+  <img src="./imagenes/ERROR_404.png" alt="Error 404" width="800" style="border: 2px solid #ccc; border-radius: 10px;"/>
+</div>
+ <p><em>En caso de tener una excepción se mostrará una pantalla de error mostrando el mensaje que devuelva la API; por ejemplo: al intentar editar un pais cuyo id no existe</em></p>
+
+<div align="center">
+  <img src="./imagenes/API_NO_LEVANTADA.png" alt="API no levantada" width="800" style="border: 2px solid #ccc; border-radius: 10px;"/>
+</div>
+ <p><em>esta pantalla no solo se muestra en caso de errores de la API, si no tambien si esta no esta levantada</em></p>
 
