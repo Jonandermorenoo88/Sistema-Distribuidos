@@ -70,3 +70,32 @@ Todos los datos que se envían o reciben desde la API relacionados con países s
 - 🏛️ **capital**: Capital del país (**texto**).
 - 🗺️ **continente**: Continente al que pertenece (**texto**).
 - 👥 **poblacion**: Número de habitantes (**entero**).
+- 
+
+### ⚠️ <span style="color:#DC143C;">Tratamiento de errores</span>
+
+La API muestra diferentes tipos de mensajes para garantizar una mejor experiencia de usuario y una respuesta clara ante problemas.
+
+A continuación se muestran algunos ejemplos:
+
+<div align="center">
+  <img src="./imagenes/DELETE.png" alt="Error 404 - País no encontrado - DELETE" width="800" style="border: 2px solid #ccc; border-radius: 10px;"/>
+  <p><em>Figura 1: Error 404 - País no encontrado.</em></p>
+</div>
+
+<div align="center">
+  <img src="./imagenes/GET_ONE.png" alt="Error 404 - País no encontrado - GET" width="800" style="border: 2px solid #ccc; border-radius: 10px;"/>
+  <p><em>Figura 2: Error 404 - País no encontrado.</em></p>
+</div>
+
+<div align="center">
+  <img src="./imagenes/POST.png" alt="Error 400 - Faltan datos - POST" width="800" style="border: 2px solid #ccc; border-radius: 10px;"/>
+  <p><em>Figura 3: Error 400 - Faltan datos.</em></p>
+</div>
+
+<div align="center">
+  <img src="./imagenes/PUT.png" alt="Error 404 - País no encontrado - PUT" width="800" style="border: 2px solid #ccc; border-radius: 10px;"/>
+  <p><em>Figura 4: Error 404 - País no encontrado.</em></p>
+</div>
+
+
