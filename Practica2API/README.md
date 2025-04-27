@@ -45,7 +45,7 @@ A continuación se presentan los diferentes endpoints disponibles en la API Flas
 | 🔵 **POST**   | `/paises`                  | Crea un nuevo país                         |
 | 🟠 **PUT**    | `/paises/<id>`        | Actualiza la información de un país por ID |
 | 🔴 **DELETE** | `/paises/<id>`        | Elimina un país de la base de datos por ID  |
-| 🟢 **GET**    | `/paises/download/txt`      | Descarga un archivo TXT con la lista de países |
+| 🟢 **GET**    | `/paises/txt`      | Descarga un archivo TXT con la lista de países |
 
 </div>
 
